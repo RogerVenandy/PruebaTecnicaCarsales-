@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="container">
+<h1>Episodios Rick And Morty</h1>
+<br>
+
+    <table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Nro Episodio</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let episodio of episodios">
+            <th scope="row">{{episodio.id}}</th>
+            <td>{{episodio.name}}</td>
+            <td>{{episodio.episode}}</td>
+        </tr> 
+    </tbody>
+    </table>
+</div>
+
+
+<app-footer></app-footer>
